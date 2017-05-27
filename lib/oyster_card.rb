@@ -12,4 +12,8 @@ def top_up(amount)
   @balance += amount
 end
 
+def deduct(fare)
+  @balance -= fare
+end
+
 end
