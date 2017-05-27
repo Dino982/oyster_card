@@ -19,6 +19,7 @@ attr_accessor :in_journey
   end
 
   def touch_in
+    fail "Insufficient balance to touch in" if balance < 1
     @in_journey = true
   end
 
